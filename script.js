@@ -69,3 +69,11 @@ alert( `Hello, ${myName}!` ); // Hello, John!
         If there is a match, the associated block of code is executed.
         If there is no match, no code is executed.
  */ 
+
+// Functions 
+
+function favoriteAnimal(animal) { // animal is a function parameter
+    return animal + " is my favorite animal!" // animal here is the argument passed to the function aka goat
+}
+
+console.log(favoriteAnimal('Goat')) // Passing 'Goat' as an argument to the function
