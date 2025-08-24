@@ -95,3 +95,30 @@ console.log(nestedArray[1][0]); // Accessing an element from the nested array, s
 
 arrayTwo[1] = 5; // Reassigning the second element of arrayTwo
 console.log(arrayTwo);
+
+// Manipulating the DOM
+/**
+ * the DOM (Document Object Model) is a programming interface for web documents.
+ * It represents the structure of a document as a tree of objects.
+ * The DOM allows programming languages to interact with the content, structure, and style of a document.
+ *
+ * Live html code is converted into a DOM tree.
+ */
+element.querySelector() // This is a method used to select elements from the DOM.
+element.querySelectorAll() // This is a method used to select all elements that match a specific CSS selector.
+/** - Returns all elements in a NodeList.
+ * - NodeList is a collection of nodes that can be accessed by index.
+ * - NodeList is not an array, but it can be converted to an array using Array.from() or the spread operator.
+ */
+
+const div = document.createElement('div'); // Creating a new div element in memory not in the DOM
+parentElement.appendChild(div); // Adding the new div element to the DOM as a last child
+parentElement.removeChild(div); // Removing the div element from the DOM
+// if id exists, update it to 'theDiv', else create an id with value "theDiv"
+div.setAttribute("id", "theDiv");
+
+// returns value of specified attribute, in this case "theDiv"
+div.getAttribute("id");
+
+// removes specified attribute
+div.removeAttribute("id");
