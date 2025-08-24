@@ -147,5 +147,18 @@ div.innerHTML = "<span>Hello World!</span>";
  *
  * // the JavaScript file
  * const btn = document.querySelector("#btn");
+ * 
  * btn.onclick = () => alert("Hello World");
+ * 
+ * OR
+ *
+ * // the JavaScript file
+ * const btn = document.querySelector("#btn");
+ * btn.addEventListener("click", () => {
+ *   alert("Hello World");
+ * });
+ *
+ * OR
+ * 
+ * btn.addEventListener("click", alertFunction);
  */
