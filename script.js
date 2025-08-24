@@ -77,3 +77,21 @@ function favoriteAnimal(animal) { // animal is a function parameter
 }
 
 console.log(favoriteAnimal('Goat')) // Passing 'Goat' as an argument to the function
+
+// Arrays
+const array = []; // Initializing empty array
+const arrayTwo = [1, 2, 3]; // Initializing array with values
+const nestedArray = [[1, 2], [3, 4], [5, 6]]; // Initializing nested array
+
+console.log(arrayTwo[2]); // Accessing the third element of the array
+console.log(arrayTwo.length); // Getting the length of the array
+
+arrayTwo.push(4); // Adding an element to the end of the array
+array.push(["a", "b", "c"]); // Creating an array inside another array
+array.push(1, 2, 3); // Adding multiple elements to the array
+console.log(array);
+console.log("Nested Array: ", nestedArray);
+console.log(nestedArray[1][0]); // Accessing an element from the nested array, second array first element
+
+arrayTwo[1] = 5; // Reassigning the second element of arrayTwo
+console.log(arrayTwo);
